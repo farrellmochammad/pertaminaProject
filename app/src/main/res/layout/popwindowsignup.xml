@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/ruluko"
+        android:text="Signup"
+        android:textColor="#D50000"
+        android:textSize="36dp" />
+
+    <ImageView
+        android:id="@+id/imageUsername"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="31dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:contentDescription="TODO"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_perm_identity_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/txUsername"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageUsername"
+        android:layout_alignStart="@+id/imageUsername"
+        android:layout_alignTop="@+id/imageUsername"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:fontFamily="@font/ruluko"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#757575" />
+
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/imageUsername"
+        android:layout_alignStart="@+id/imageUsername"
+        android:layout_below="@+id/txUsername"
+        android:layout_marginTop="26dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_email_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/txEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageEmail"
+        android:layout_alignLeft="@+id/txUsername"
+        android:layout_alignStart="@+id/txUsername"
+        android:ems="10"
+        android:fontFamily="@font/ruluko"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#757575" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/imageEmail"
+        android:layout_alignStart="@+id/imageEmail"
+        android:layout_below="@+id/txEmail"
+        android:layout_marginTop="24dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_vpn_key_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txEmail"
+        android:layout_alignStart="@+id/txEmail"
+        android:layout_alignTop="@+id/imagePassword"
+        android:ems="10"
+        android:hint="Password"
+        android:fontFamily="@font/ruluko"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageRepassword"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/imagePassword"
+        android:layout_alignStart="@+id/imagePassword"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="23dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_vpn_key_black_24dp"
+        tools:ignore="VectorDrawableCompat" android:contentDescription="TODO" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignTop="@+id/imageRepassword"
+        android:ems="10"
+        android:hint="Re-password"
+        android:fontFamily="@font/ruluko"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_below="@+id/imageRepassword"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/corner_radius"
+        android:fontFamily="@font/ruluko"
+        android:text="Signup"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

@@ -29,12 +29,11 @@
         android:background="@drawable/my_stroke"
         android:ems="10"
         android:fontFamily="@font/ruluko"
+        android:hint="Username"
         android:inputType="textPersonName"
-        android:textColor="#BDBDBD"
-        tools:text="  Username" />
+        android:textColor="#BDBDBD" />
 
     <EditText
-
         android:id="@+id/password"
         android:layout_width="250dp"
         android:layout_height="50dp"
@@ -43,6 +42,8 @@
         android:layout_centerVertical="true"
         android:background="@drawable/my_stroke"
         android:ems="10"
+        android:hint="Password"
+        android:fontFamily="@font/ruluko"
         android:inputType="textPassword" />
 
     <Button
@@ -78,6 +79,7 @@
         android:layout_below="@+id/buttonLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:textColor="#757575"
         android:text="OR" />
 
     <TextView
@@ -86,16 +88,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonLoginfb"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
         android:fontFamily="@font/ruluko"
-        android:text="Don't have account ?" />
+        android:text="Don't have account ?"
+        android:textColor="#757575" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/signupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
         android:fontFamily="@font/ruluko"
         android:text="Signup MyRetail"
         android:textColor="#D50000" />
