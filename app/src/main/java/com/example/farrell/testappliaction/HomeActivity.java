@@ -20,14 +20,20 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.action_add:
-                        Toast.makeText(HomeActivity.this, "Action add click", Toast.LENGTH_SHORT).show();
+                    case R.id.action_home:
+                        Toast.makeText(HomeActivity.this, "Action home click", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.action_edit:
-                        Toast.makeText(HomeActivity.this,"Action edit click", Toast.LENGTH_SHORT).show();
+                    case R.id.action_transactionlist:
+                        Toast.makeText(HomeActivity.this,"Action transaction click", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.action_remove:
-                        Toast.makeText(HomeActivity.this, "Action remove click", Toast.LENGTH_SHORT).show();
+                    case R.id.action_nearme:
+                        Toast.makeText(HomeActivity.this, "Action nearme click", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_promo:
+                        Toast.makeText(HomeActivity.this, "Action promo click", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_profile:
+                        Toast.makeText(HomeActivity.this, "Action profile click", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;
